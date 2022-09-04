@@ -1,0 +1,111 @@
+[{
+        "title": "Ratchet & Clank: Una dimensión aparte",
+        "serie": "Ratchet & Clank",
+        "developers": ["Insomniac Games"],
+        "distributors": ["Sony Interactive Entertainment"],
+        "mode": ["Videojuego de un jugador"],
+        "image": "../media/images/games/ratchet.jpg",
+        "platforms": ["PlayStation 5"],
+        "price": 134,
+        "date": 2021
+    },
+    {
+        "title": "FIFA 22",
+        "serie": "FIFA",
+        "developers": ["Electronic Arts", "EA Romania", "EA Canada"],
+        "distributors": ["Electronic Arts"],
+        "mode": ["Videojuego de un jugador", "Videojuego multijugador"],
+        "image": "./media/images/games/fifa.jpg",
+        "platforms": ["PlayStation 4", "Project Scarlett", "Xbox One", "Google Stadia", "PlayStation 5", "Nintendo Switch", "Microsoft Windows"],
+        "price": 204,
+        "date": 2021
+    },
+    {
+        "title": "Deathloop",
+        "serie": "",
+        "developers": ["Arkane Studios"],
+        "distributors": ["Bethesda Softworks"],
+        "mode": ["Videojuego multijugador"],
+        "image": "./media/images/games/deathloop.jpg",
+        "platforms": ["PlayStation 5", "Microsoft Windows"],
+        "price": 250,
+        "date": 2021
+    },
+    {
+        "title": "Returnal",
+        "serie": "",
+        "developers": ["Housemarque"],
+        "distributors": ["Sony Interactive Entertainment"],
+        "mode": ["Videojuego de un jugador"],
+        "image": "./media/images/games/returnal.jpg",
+        "platforms": ["PlayStation 5"],
+        "price": 100,
+        "date": 2021
+    },
+    {
+        "title": "Far Cry 6",
+        "serie": "Far Cry",
+        "developers": ["Ubisoft Milan", "Ubisoft Toronto"],
+        "distributors": ["Ubisoft", "Ubisoft Milan"],
+        "mode": ["Videojuego de un jugador", "Videojuego multijugador"],
+        "image": "./media/images/games/farcry.jpg",
+        "platforms": ["Project Scarlett", "PlayStation 4", "Amazon Luna", "Xbox One", "PlayStation 5", "Google Stadia", "Microsoft Windows"],
+        "price": 300,
+        "date": 2021
+    },
+    {
+        "title": "Kena: Bridge of Spirits",
+        "serie": "",
+        "developers": ["Ember Lab", "Ember Lab", "LLC"],
+        "distributors": ["Ember Lab", "Maximum Games", "Ember Lab", "LLC"],
+        "mode": ["Videojuego de un jugador"],
+        "image": "./media/images/games/kena.jpg",
+        "platforms": ["PlayStation 4", "PlayStation 5", "Microsoft Windows"],
+        "price": 150,
+        "date": 2021
+    },
+    {
+        "title": "Resident Evil Village",
+        "serie": "Resident Evil",
+        "developers": ["Capcom"],
+        "distributors": ["Capcom"],
+        "mode": ["Videojuego de un jugador"],
+        "image": "./media/images/games/resident.jpg",
+        "platforms": ["PlayStation 4", "PlayStation 5", "Project Scarlett", "Xbox One", "Microsoft Windows", "Google Stadia"],
+        "price": 250,
+        "date": 2021
+    },
+    {
+        "title": "Hitman 3",
+        "serie": "Hitman",
+        "developers": ["IO Interactive"],
+        "distributors": ["IO Interactive"],
+        "mode": ["Videojuego de un jugador"],
+        "image": "./media/images/games/hitman.jpg",
+        "platforms": ["PlayStation 4", "PlayStation 5", "Project Scarlett", "Nintendo Switch", "Microsoft Windows", "Google Stadia"],
+        "price": 220,
+        "date": 2021
+    },
+    {
+        "title": "It Takes Two",
+        "serie": "",
+        "developers": ["Hazelight Studios", "Hazelight"],
+        "distributors": ["Electronic Arts"],
+        "mode": ["Videojuego multijugador"],
+        "image": "./media/images/games/It-take-two.jpg",
+        "platforms": ["PlayStation 4", "PlayStation 5", "Project Scarlett", "Xbox One", "Microsoft Windows"],
+        "price": 289,
+        "date": 2021
+    },
+    {
+        "title": "Oddworld: Soulstorm",
+        "serie": "Oddworld",
+        "developers": ["Oddworld Inhabitants", "Just Add Water", "Frima Studio", "Fat Kraken Studios", "Sabotage Studio"],
+        "distributors": ["Oddworld Inhabitants", "Microids"],
+        "mode": ["Videojuego de un jugador"],
+        "image": "./media/images/games/oddworld.jpg",
+        "platforms": ["PlayStation 4", "PlayStation 5", "Project Scarlett", "Xbox One", "Microsoft Windows"],
+        "price": 310,
+        "date": 2021
+    }
+]

@@ -13,13 +13,19 @@ const ItemListContainer = () => {
 	useEffect(() => {
 		getProducts()
 			.then((res) => {
-				setProducts(res);
+				setTimeout(() => {
+					setProducts(res);
+				}, 2000);
 			})
 			.catch(() => {
-				setError(true);
+				setTimeout(() => {
+					setError(true);
+				}, 2000);
 			})
 			.finally(() => {
-				setLoading(false);
+				setTimeout(() => {
+					setLoading(false);
+				}, 2000);
 			});
 	}, []);
 
