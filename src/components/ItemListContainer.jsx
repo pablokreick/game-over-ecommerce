@@ -11,7 +11,7 @@ const ItemListContainer = () => {
 
 	//Siguiente paso es ponerle loading y error, luego cambiamos el getProducts
 	useEffect(() => {
-		getProducts
+		getProducts()
 			.then((res) => {
 				setProducts(res);
 			})
