@@ -1,15 +1,49 @@
-import React from "react";
-import ItemCount from "./ItemCount";
+import React, { useEffect, useState } from "react";
+import { getProducts } from "../utils/getProducts";
+import ErrorMessage from "./ErrorMessage";
+import ItemList from "./ItemList";
+import Loading from "./Loading";
 
-const ItemListContainer = ({ greeting }) => {
-	const onAdd = (quantity) => {
-		console.log(quantity);
-	};
+const ItemListContainer = () => {
+	const [products, setProducts] = useState([]);
+	const [loading, setLoading] = useState(true);
+	const [error, setError] = useState(false);
+
+	//Siguiente paso es ponerle loading y error, luego cambiamos el getProducts
+	useEffect(() => {
+		getProducts
+			.then((res) => {
+				setProducts(res);
+			})
+			.catch(() => {
+				setError(true);
+			})
+			.finally(() => {
+				setLoading(false);
+			});
+	}, []);
+
+	if (error) {
+		return (
+			<ErrorMessage text="No podemos mostrar los productos en este momento" />
+		);
+	}
 
 	return (
 		<>
-			<h1 className="title">{greeting}</h1>
-			<ItemCount initial={1} stock={5} onAdd={onAdd} />
+			{loading ? <Loading /> : <ItemList products={products} />}
+			{/* {error && (
+				<ErrorMessage text="No podemos mostrar los productos en este momento" />
+			)}
+			{loading && <Loading />}
+			{products.length > 0 && <ItemList products={products} />} */}
+			{/* {loading ? (
+				<Loading />
+			) : products.length > 0 ? (
+				<ItemList products={products} />
+			) : (
+				<ErrorMessage text="No podemos mostrar los productos en este momento" />
+			)} */}
 		</>
 	);
 };

@@ -1,12 +1,12 @@
 import "./App.css";
-import ItemListContainer from "./components/ItemListContainer";
 import NavBar from "./components/NavBar";
+import Products from "./pages/Products";
 
 function App() {
 	return (
 		<>
 			<NavBar />
-			<ItemListContainer greeting="Game Over" />
+			<Products />
 		</>
 	);
 }
