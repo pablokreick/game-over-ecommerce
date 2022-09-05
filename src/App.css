@@ -269,6 +269,9 @@ footer {
      BASICS STYLES START
 \----------------------------------/
 */
+a {
+	text-decoration: none;
+}
 
 p,
 span,
@@ -697,16 +700,28 @@ li {
 .carrito__empty p {
 	color: #ffc857;
 	text-shadow: 0 0 30px #ffc857;
-	font-size: calc(0.5rem + 3vw);
+	font-size: calc(1rem + 3vw);
 	font-family: "Baloo Bhaijaan 2", cursive;
 	text-align: center;
 	text-transform: uppercase;
 }
 
-.carrito__empty i {
-	color: #ffc857;
-	text-shadow: 0 0 80px #ffc857;
-	font-size: calc(1rem + 5vw);
+.carrito__emoji {
+	display: none;
+}
+
+@media screen and (min-width: 768px) {
+	.carrito__empty p {
+		color: #ffc857;
+		text-shadow: 0 0 30px #ffc857;
+		font-size: calc(0.5rem + 3vw);
+		font-family: "Baloo Bhaijaan 2", cursive;
+		text-align: center;
+		text-transform: uppercase;
+	}
+	.carrito__emoji {
+		display: block;
+	}
 }
 
 /* CARRITO */

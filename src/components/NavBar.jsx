@@ -1,38 +1,34 @@
 import React from "react";
 import CartWidget from "./CartWidget";
+import { NavLink } from "react-router-dom";
 
 const NavBar = () => {
 	return (
 		<nav className="nav">
 			<div className="nav__brand">
-				<a className="nav__link" href="/">
+				<NavLink className="nav__link" to="/">
 					<img
 						className="nav__logo"
 						src="./media/images/logoGameOver.png"
-						alt="logo de Game Over"
+						alt="logo GameOver"
 					/>
-				</a>
+				</NavLink>
 			</div>
 			<ul className="nav__list">
 				<li className="nav__item">
-					<a className="nav__link" href="#">
+					<NavLink className="nav__link" to="/products">
 						Productos
-					</a>
+					</NavLink>
 				</li>
 				<li className="nav__item">
-					<a className="nav__link" href="#">
-						PlayStation 4
-					</a>
+					<NavLink className="nav__link" to="/platforms">
+						Consolas
+					</NavLink>
 				</li>
 				<li className="nav__item">
-					<a className="nav__link" href="#">
-						PlayStation 5
-					</a>
-				</li>
-				<li className="nav__item">
-					<a className="nav__link" href="#">
+					<NavLink className="nav__link" to="/cart">
 						<CartWidget />
-					</a>
+					</NavLink>
 				</li>
 			</ul>
 		</nav>

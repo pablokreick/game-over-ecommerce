@@ -9,23 +9,16 @@ const ItemListContainer = () => {
 	const [loading, setLoading] = useState(true);
 	const [error, setError] = useState(false);
 
-	//Siguiente paso es ponerle loading y error, luego cambiamos el getProducts
 	useEffect(() => {
 		getProducts()
 			.then((res) => {
-				setTimeout(() => {
-					setProducts(res);
-				}, 2000);
+				setProducts(res);
 			})
 			.catch(() => {
-				setTimeout(() => {
-					setError(true);
-				}, 2000);
+				setError(true);
 			})
 			.finally(() => {
-				setTimeout(() => {
-					setLoading(false);
-				}, 2000);
+				setLoading(false);
 			});
 	}, []);
 

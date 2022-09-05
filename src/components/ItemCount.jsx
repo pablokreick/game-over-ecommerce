@@ -1,14 +1,8 @@
-import React, { useState } from "react";
+import React from "react";
 import { PlusLg } from "react-bootstrap-icons";
 import { DashLg } from "react-bootstrap-icons";
 
-const ItemCount = ({ initial, stock, onAdd }) => {
-	const [count, setCount] = useState(+initial);
-
-	const handleCounter = (quantity) => {
-		setCount(count + quantity);
-	};
-
+const ItemCount = ({ stock, onAdd, count, handleCounter }) => {
 	return (
 		<>
 			<div className="counter">
